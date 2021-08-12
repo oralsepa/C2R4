@@ -34,9 +34,9 @@ public class VistaRequerimientos {
             ArrayList<O2ProyectoPorTipo> listaProyectos = controlador.Requerimiento_2();
 
             for(O2ProyectoPorTipo proyectos : listaProyectos){
-                System.out.printf("El proyecto de ID_Proyecto %d de la constructora: %s de la ciudad %s, tiene un estrato asignado de %d %n",
+                System.out.printf("El proyecto con ID_Proyecto %d de la constructora: %s de la ciudad %s, tiene un estrato asignado de %d %n",
                     proyectos.getId_proyecto(),proyectos.getConstructora(),proyectos.getCiudad(),proyectos.getEstrato());
-
+            }
         }catch(SQLException e){
             System.err.println(e);
         }
@@ -51,7 +51,7 @@ public class VistaRequerimientos {
             for(O3LiderPorNombre nombres : nombreLideres){
                 System.out.printf("El Lider con ID %d se llama %s %s %n",
                     nombres.getId_lider(),nombres.getNombre(),nombres.getApellido());
-            
+            }
         }catch(SQLException e){
             System.err.println(e);
         }

@@ -41,7 +41,7 @@ public class O2ProyectoPorTipo {
         this.ciudad = ciudad;
     }
 
-    public String getEstrato() {
+    public Integer getEstrato() {
         return estrato;
     }
 

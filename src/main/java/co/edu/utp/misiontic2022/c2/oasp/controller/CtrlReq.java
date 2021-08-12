@@ -1,19 +1,16 @@
 package co.edu.utp.misiontic2022.c2.oasp.controller;
 
+//Librerías para bases de datos
+import java.sql.SQLException;
 //Estructuras de datos (colecciones)
 import java.util.ArrayList;
 
-//Modelos (acceso y objetos contenedores)
-import model.dao.Req1LiderPorSalario;
-import model.dao.Req2ProyectoPorTipo;
-import model.dao.Req3LiderPorNombre;
-import model.vo.O1LiderPorSalario;
-import model.vo.O2ProyectoPorTipo;
-import model.vo.O3LiderPorNombre;
-
-
-//Librerías para bases de datos
-import java.sql.SQLException;
+import co.edu.utp.misiontic2022.c2.oasp.model.dao.Req1LiderPorSalario;
+import co.edu.utp.misiontic2022.c2.oasp.model.dao.Req2ProyectoPorTipo;
+import co.edu.utp.misiontic2022.c2.oasp.model.dao.Req3LiderPorNombre;
+import co.edu.utp.misiontic2022.c2.oasp.model.vo.O1LiderPorSalario;
+import co.edu.utp.misiontic2022.c2.oasp.model.vo.O2ProyectoPorTipo;
+import co.edu.utp.misiontic2022.c2.oasp.model.vo.O3LiderPorNombre;
 
 public class CtrlReq {       
     private final Req1LiderPorSalario req1LiderPorSalario;
@@ -22,9 +19,9 @@ public class CtrlReq {
     
 
     public CtrlReq() {
-        this.req1LiderPorSalario = new Req1LiderPorSalario;
-        this.req2ProyectoPorTipo = new Req2ProyectoPorTipo;
-        this.req3LiderPorNombre = new Req3LiderPorNombre;
+        this.req1LiderPorSalario = new Req1LiderPorSalario();
+        this.req2ProyectoPorTipo = new Req2ProyectoPorTipo();
+        this.req3LiderPorNombre = new Req3LiderPorNombre();
     }
 
     public ArrayList<O1LiderPorSalario> Requerimiento_1() throws SQLException {

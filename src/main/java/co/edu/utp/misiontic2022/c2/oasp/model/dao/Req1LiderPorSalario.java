@@ -1,19 +1,15 @@
 package co.edu.utp.misiontic2022.c2.oasp.model.dao;
 
-//Estructura de datos
-import java.util.ArrayList;
-
-//Librerías para SQL y Base de Datos
-import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+//Librerías para SQL y Base de Datos
+import java.sql.SQLException;
+//Estructura de datos
+import java.util.ArrayList;
 
-//Clase para conexión
-import util.JDBCUtilities;
-
-//Encapsulamiento de los datos
-import model.vo.O1LiderPorSalario;
+import co.edu.utp.misiontic2022.c2.oasp.model.vo.O1LiderPorSalario;
+import co.edu.utp.misiontic2022.c2.oasp.util.JDBCUtilities;
 
 public class Req1LiderPorSalario {
     
