@@ -1,4 +1,5 @@
-import view.VistaRequerimientos;
+package co.edu.utp.misiontic2022.c2.oasp;
+import co.edu.utp.misiontic2022.c2.oasp.view.VistaRequerimientos;
 
 public class App {
     public static void main( String[] args ){        
@@ -10,7 +11,7 @@ public class App {
         System.out.println();
 
          //Requerimiento 2 - Reto3
-         VistaRequerimientos.requerimiento2();
+        VistaRequerimientos.requerimiento2();
          System.out.println();
 
         //Requerimiento 5 - Reto3
